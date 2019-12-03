@@ -48,7 +48,7 @@ const Preview = props => {
         style={{ position: "absolute", top: "30%", left: "65%", right: "5%" }}
       >
         <Logo>헤드라인 기사</Logo>
-        <div style={{ marginBottom: "3%" , color:"white", fontSize:"20px"}}>
+        <div style={{ marginBottom: "3%" , color:"white", fontSize:"20px",lineHeight:"200%"}} >
           메시 발롱도르 수상 <br />
           '새 역사 쓴' 손흥민, 발롱도르 22위...아시아 역대 최고 순위<br/>
           FA컵 3R 대진 발표...리버풀-에버턴, 맨유-울버햄튼, 토트넘-미들즈브러 <br />

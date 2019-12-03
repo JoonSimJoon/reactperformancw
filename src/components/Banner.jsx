@@ -19,7 +19,16 @@ const Wrapper = styled.div`
 const Logo = styled.img`
   height: 200%;
   margin-right: 30px;
+  
 `;
+const Replay = styled.div`
+  display:flex;
+  width:100%;
+  & > {
+    align-self:center;
+  }
+`;
+
 
 const NavText = styled.ul`
   display: flex;
@@ -59,20 +68,24 @@ const setFont = event => {
 };
 
 const Banner = props => {
+  
   return (
     <>
       <Wrapper>
-        <Logo src={logo}></Logo>
+        <a href="https://www.premierleague.com/"><Logo src={logo} ></Logo></a>
         <NavText>
           <NavTextItem className="asd" onClick={setFont}>
             <Link to="/">홈</Link>
           </NavTextItem>
-          <NavTextItem className="asd" onClick={setFont}>
-            <a href="https://www.youtube.com/playlist?list=PL7MQjbfOyOE1io1S1ySLJG19gF_5oPRiT">챔피언스리그 다시보기</a>
-          </NavTextItem>
-          <NavTextItem className="asd" onClick={setFont}>
-            <a href="https://www.youtube.com/playlist?list=PL7MQjbfOyOE3FOgSXX6XFp8ht9WGNULtw">epl 다시보기</a>
-          </NavTextItem>
+          <Replay>
+            <NavTextItem className="asd" onClick={setFont}>
+              <a href="https://www.youtube.com/playlist?list=PL7MQjbfOyOE1io1S1ySLJG19gF_5oPRiT">챔피언스리그 다시보기</a>
+            </NavTextItem>
+            <NavTextItem className="asd" onClick={setFont}>
+              <a href="https://www.youtube.com/playlist?list=PL7MQjbfOyOE3FOgSXX6XFp8ht9WGNULtw">epl 다시보기</a>
+            </NavTextItem>
+          </Replay>
+          
         </NavText>
       </Wrapper>
     </>
