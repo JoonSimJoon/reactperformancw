@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import logo from '../pages/Logo.png'
 
 const Wrapper = styled.div`
   width: 100%;
@@ -16,7 +17,7 @@ const Wrapper = styled.div`
 `;
 
 const Logo = styled.img`
-  height: 100%;
+  height: 200%;
   margin-right: 30px;
 `;
 
@@ -56,36 +57,23 @@ const setFont = event => {
   event.target.style.fontWeight = "bold";
   event.target.style.color = "#fff";
 };
+
 const Banner = props => {
   return (
     <>
       <Wrapper>
-        <Logo src="https://cdn.pixelprivacy.com/wp-content/uploads/2017/12/Netflix-Logo-1024x277.png"></Logo>
+        <Logo src={logo}></Logo>
         <NavText>
           <NavTextItem className="asd" onClick={setFont}>
             <Link to="/">홈</Link>
           </NavTextItem>
           <NavTextItem className="asd" onClick={setFont}>
-            <Link to="/tv">TV 프로그램</Link>
+            <a href="https://www.youtube.com/playlist?list=PL7MQjbfOyOE1io1S1ySLJG19gF_5oPRiT">챔피언스리그 다시보기</a>
           </NavTextItem>
           <NavTextItem className="asd" onClick={setFont}>
-            최신 등록 콘텐츠
-          </NavTextItem>
-          <NavTextItem className="asd" onClick={setFont}>
-            내가 찜한 콘텐츠
+            <a href="https://www.youtube.com/playlist?list=PL7MQjbfOyOE3FOgSXX6XFp8ht9WGNULtw">epl 다시보기</a>
           </NavTextItem>
         </NavText>
-        <NavIcon>
-          <NavIconItem>
-            <Img src="/search.svg" alt="" />
-          </NavIconItem>
-          <NavIconItem>
-            <Img src="/gift.svg" alt="" />
-          </NavIconItem>
-          <NavIconItem>
-            <Img src="/bell.svg" alt="" />
-          </NavIconItem>
-        </NavIcon>
       </Wrapper>
     </>
   );

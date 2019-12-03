@@ -37,11 +37,12 @@ class Main extends React.Component {
     return (
       <>
         <Preview />
+{/*         
         <MovieContainerWrapper
           style={{ marginTop: "45%", overflowX: "hidden", width: "100%" }}
         >
           <MovieContainer title="TV프로그램" movies={this.state.movies} />
-        </MovieContainerWrapper>
+        </MovieContainerWrapper> */}
       </>
     );
   }

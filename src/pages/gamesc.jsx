@@ -10,7 +10,7 @@ const MovieContainerWrapper = styled.div`
     margin-bottom: 25px;
   }
 `;
-class Tv extends React.Component {
+class Gamesc extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -27,10 +27,11 @@ class Tv extends React.Component {
         <MovieContainerWrapper
           style={{ marginTop: "45%", overflowX: "hidden", width: "100%" }}
         >
-          <MovieContainer title="TV프로그램" movies={[{ title: "Test" }]} />
+          <MovieContainer title="England premier league schedule" movies={[{ title: "본머스 ㄷ 크리스탈",  },{ title: "번리 ㄷ 맨체스터 시티" },{ title: "레스터 시티 ㄷ 왓포드" },{ title: "맨유 ㄷ 토토넘" }]} />
+          <MovieContainer title="champions league schedule" movies={[{ title: "리버풀 ㄷ 잘츠부르크" },{ title: "나폴리 ㄷ 헹크" }]} />
         </MovieContainerWrapper>
       </>
     );
   }
 }
-export default withLayout(Tv);
+export default withLayout(Gamesc);

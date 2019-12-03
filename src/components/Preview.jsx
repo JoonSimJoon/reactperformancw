@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const Wrapper = styled.div`
   color: white;
@@ -15,6 +16,10 @@ const Wrapper = styled.div`
   right: 0;
   z-index: -1;
 `;
+const Logo = styled.div`
+  font-size:50px;
+`;
+
 const Button = styled.button`
   border: none;
   color: white;
@@ -34,24 +39,24 @@ const Button = styled.button`
 
 const Preview = props => {
   return (
-    <Wrapper>
+    <Wrapper> 
       <img
-        src="https://occ-0-988-993.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABSpHMNyvIRy6PolVWkmMg80JA0Kdcldq3vIxohYsRrtBKVZEyJAW6ls4b6EoKP7DzCQ6Fvnq5C694tN5eN06_Hb5gHp2.webp?r=105](https://occ-0-988-993.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABSpHMNyvIRy6PolVWkmMg80JA0Kdcldq3vIxohYsRrtBKVZEyJAW6ls4b6EoKP7DzCQ6Fvnq5C694tN5eN06_Hb5gHp2.webp?r=105"
+        src="http://getwallpapers.com/wallpaper/full/d/d/b/762333-free-download-premier-league-wallpapers-2560x1440.jpg"
         alt=""
       />
       <div
-        style={{ position: "absolute", top: "35%", left: "5%", right: "65%" }}
+        style={{ position: "absolute", top: "30%", left: "65%", right: "5%" }}
       >
-        <img src="https://occ-0-988-993.1.nflxso.net/dnm/api/v6/5e0byrbbfBPBmtxyXMpKqMuqOQY/AAAABduWV1XI_V1CpMePQjJ8-_aIvKPmyAvR8CAXcOAAOByHH-uTuwXXxspW-VTWODhxZtUSBI1BPK3cvJE818mM1QQ_e73MVBZPxu6c.webp?r=9a5](https://occ-0-988-993.1.nflxso.net/dnm/api/v6/5e0byrbbfBPBmtxyXMpKqMuqOQY/AAAABduWV1XI_V1CpMePQjJ8-_aIvKPmyAvR8CAXcOAAOByHH-uTuwXXxspW-VTWODhxZtUSBI1BPK3cvJE818mM1QQ_e73MVBZPxu6c.webp?r=9a5" />
-        <div style={{ marginBottom: "3%" }}>
-          격동의 구한말, 불꽃처럼 타오르는 여인이 있다. 조국을 위해 <br />
-          가시밭길을 택한 명문가의 규수. 그녀가 한 사내를 만난다. <br />
-          동지인지, 적인지, 그저 이방인인지 모를 사내를. <br />
+        <Logo>헤드라인 기사</Logo>
+        <div style={{ marginBottom: "3%" , color:"white", fontSize:"20px"}}>
+          메시 발롱도르 수상 <br />
+          '새 역사 쓴' 손흥민, 발롱도르 22위...아시아 역대 최고 순위<br/>
+          FA컵 3R 대진 발표...리버풀-에버턴, 맨유-울버햄튼, 토트넘-미들즈브러 <br />
         </div>
         <div>
-          <Button>재생</Button>
-          <Button>내가 찜한 콘텐츠</Button>
-          <Button>상세 정보</Button>
+          <Link to="/gamesc"><Button>일정</Button></Link>
+          <Link to="/news"><Button>최신 뉴스</Button></Link>
+          
         </div>
       </div>
     </Wrapper>

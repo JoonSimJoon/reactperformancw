@@ -2,8 +2,9 @@ import React from "react";
 import Main from "./pages/Main";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import { createGlobalStyle } from "styled-components";
-import Tv from "./pages/Tv";
+import Gamesc from "./pages/gamesc";
 import Banner from "./components/Banner";
+import News from "./pages/News";
 
 const GlobalStyle = createGlobalStyle`
   *{
@@ -29,8 +30,11 @@ const App = () => {
         <Route path="/" exact>
           <Main />
         </Route>
-        <Route path="/tv" exact>
-          <Tv />
+        <Route path="/gamesc" exact>
+          <Gamesc />
+        </Route>
+        <Route path="/news" exact>
+          <News />
         </Route>
       </Router>
     </>
