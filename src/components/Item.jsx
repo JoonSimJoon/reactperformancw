@@ -41,7 +41,7 @@ const Wrapper = styled.div`
   }
 `;
 
-const MovieItem = props => {
+const Item = props => {
   return (
     <Wrapper>
       <div>{props.title}</div>
@@ -53,4 +53,4 @@ const MovieItem = props => {
   );
 };
 
-export default MovieItem;
+export default Item;

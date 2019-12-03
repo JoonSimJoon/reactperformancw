@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import MovieItem from "./MovieItem";
+import Item from "./Item";
 
 const BtnSize = "45px";
 
@@ -48,7 +48,7 @@ const BtnRight = styled(BtnLeft)`
   right: none;
 `;
 
-const MovieContainer = props => {
+const Container = props => {
   const [page, setPage] = React.useState(1);
   const [sliderWidth, setSliderWidth] = React.useState(0);
   const slider = React.useRef(undefined);
@@ -73,7 +73,7 @@ const MovieContainer = props => {
         <BtnRight onClick={onClickRight}>></BtnRight>
         <div className="slider" ref={slider}>
           {(props.movies || []).map((value, idx) => (
-            <MovieItem
+            <Item
               key={idx}
               title={value.title}
               backdrop_path={value.backdrop_path}
@@ -84,4 +84,4 @@ const MovieContainer = props => {
     </Wrapper>
   );
 };
-export default MovieContainer;
+export default Container;

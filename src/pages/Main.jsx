@@ -1,12 +1,12 @@
 import React from "react";
 import Preview from "../components/Preview";
-import MovieContainer from "../components/MovieContainer";
+import Container from "../components/Container";
 import styled from "styled-components";
 import axios from "axios";
 import Banner from "../components/Banner";
 import withLayout from "../components/withLayout";
 
-const MovieContainerWrapper = styled.div`
+const ContainerWrapper = styled.div`
   & > *:not(:last-child) {
     margin-bottom: 25px;
   }
